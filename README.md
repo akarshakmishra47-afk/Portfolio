@@ -3,7 +3,7 @@
 Welcome to the source code for my personal developer portfolio! This project is a minimalist, highly interactive web portfolio built from the ground up to showcase my skills in Full-Stack Development and Artificial Intelligence.
 
 ## 🌟 Live Demo
-👉 **[View Live Portfolio](https://akarshakmishra47-afk.github.io/Portfolio/)**
+👉 **[View Live Portfolio](portfolio-lilac-omega-62.vercel.app)**
 
 *(Note: If you deployed to Vercel, replace the link above with your Vercel URL!)*
 
