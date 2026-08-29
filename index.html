@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akarshak Mishra — Full-Stack Developer Portfolio</title>
+  <meta name="description" content="B.Tech CSE student building scalable web applications, mastering data structures, and deploying cloud solutions.">
+  <meta name="theme-color" content="#06060b">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Akarshak Mishra — Full-Stack Developer">
+  <meta property="og:description" content="B.Tech CSE student building scalable web apps with React, MongoDB Atlas, Supabase, and cloud deployments.">
+  <meta property="og:type" content="website">
+
+  <!-- Styles (order matters) -->
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo">&lt;<span>dev</span>/&gt;</a>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" role="menubar">
+        <a href="#hackathons" class="nav__link" role="menuitem">Hackathons</a>
+        <a href="#projects" class="nav__link" role="menuitem">Projects</a>
+        <a href="#education" class="nav__link" role="menuitem">Education</a>
+        <a href="assets/Akarshak_Mishra_Resume.pdf" class="btn btn--sm btn--outline" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- App mount point — all sections rendered via JS -->
+  <main id="app"></main>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
