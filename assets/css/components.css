@@ -135,6 +135,7 @@
   font-weight: 600;
   color: var(--text-primary);
   letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
 .nav__logo span {

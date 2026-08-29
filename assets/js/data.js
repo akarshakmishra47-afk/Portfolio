@@ -11,7 +11,7 @@ const PROFILE = {
   github: 'https://github.com/akarshakmishra47-afk',
   linkedin: 'https://www.linkedin.com/in/akarshak-mishra-b75503383',
   email: 'akarshakmishra47@gmail.com',
-  stack: ['C', 'C++', 'Python', 'SQL', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'MongoDB Atlas', 'Supabase', 'Vercel', 'Render', 'GoDaddy'],
+  stack: ['C', 'C++', 'Python', 'SQL', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'MongoDB Atlas', 'Supabase', 'Vercel', 'Render', 'GoDaddy', 'Oops With Java'],
 };
 
 const HACKATHONS = [
