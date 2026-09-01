@@ -16,12 +16,13 @@ const PROFILE = {
 
 const HACKATHONS = [
   {
-    title: 'Brain War 2026 – National Level Tech Quiz',
-    org: 'codearenas',
-    icon: '🧠',
-    description: 'Participated in the national level technical quiz competition assessing core computer science concepts.',
-    type: 'Quiz',
+    title: 'Far Away',
+    org: 'Zuup',
+    icon: '🚀',
+    description: 'MVP Submission for Round 1 of the Far Away challenge. Participated as Team Tech Hustlers.',
+    type: 'Competition',
     year: '2026',
+    certificate: 'assets/certificates/far_away_certificate.pdf'
   },
   {
     title: 'Adobe University Hackathon 2026',
@@ -30,15 +31,15 @@ const HACKATHONS = [
     description: 'Developed innovative solutions as part of Team NexForge for the Adobe university challenge.',
     type: 'Hackathon',
     year: '2026',
+    certificate: 'assets/certificates/adobe_hackathon_certificate.pdf'
   },
   {
-    title: 'Far Away',
-    org: 'Zuup',
-    icon: '🚀',
-    description: 'MVP Submission for Round 1 of the Far Away challenge. Participated as Team Tech Hustlers.',
-    type: 'Competition',
+    title: 'Brain War 2026 – National Level Tech Quiz',
+    org: 'codearenas',
+    icon: '🧠',
+    description: 'Participated in the national level technical quiz competition assessing core computer science concepts.',
+    type: 'Quiz',
     year: '2026',
-    certificate: 'assets/certificates/far_away_certificate.pdf'
   },
   {
     title: 'Grand Tech Racing - GTR',
