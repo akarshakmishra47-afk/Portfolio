@@ -161,22 +161,6 @@ const PROJECTS = [
       <p><strong>Team:</strong> Built for the IDNA National Hackathon by Team RailVerse.</p>
     `
   },
-  {
-    title: 'Replica of YouTube',
-    description: 'A full-stack YouTube clone featuring video browsing UI, responsive layout, and seamless cloud deployment.',
-    tags: ['JavaScript', 'CSS', 'HTML'],
-    infra: 'Deployed on Vercel · ⭐ 1 star',
-    github: 'https://github.com/akarshakmishra47-afk/Replica-of-youtube',
-    live: 'https://new-project-beta-eight.vercel.app',
-  },
-  {
-    title: 'Backend Project — Jokes API',
-    description: 'A backend service built with JavaScript for serving and managing jokes through a RESTful API.',
-    tags: ['JavaScript', 'Node.js', 'REST API'],
-    infra: 'Backend service',
-    github: 'https://github.com/akarshakmishra47-afk/backend-project-jokes',
-    live: '#',  // ← Add live URL if deployed
-  },
 ];
 
 const EDUCATION = [
