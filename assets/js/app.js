@@ -166,6 +166,45 @@ function init() {
   initNav();
   initScrollAnimations();
   initModals();
+  fetchAndAppendGitHubProjects();
+}
+
+async function fetchAndAppendGitHubProjects() {
+  try {
+    const githubUsername = PROFILE.github.split('/').pop();
+    const response = await fetch(`https://api.github.com/users/${githubUsername}/repos?sort=updated&per_page=10`);
+    if (!response.ok) return;
+    const repos = await response.json();
+    
+    const existingUrls = PROJECTS.map(p => p.github?.toLowerCase());
+    let newProjectsAdded = false;
+
+    repos.forEach(repo => {
+      if (!repo.fork && repo.html_url && !existingUrls.includes(repo.html_url.toLowerCase())) {
+        PROJECTS.push({
+          title: repo.name.replace(/-/g, ' '),
+          description: repo.description || 'View repository on GitHub for more details.',
+          tags: repo.language ? [repo.language] : ['Repository'],
+          infra: 'GitHub',
+          github: repo.html_url,
+          live: repo.homepage || '',
+          readme: '' 
+        });
+        newProjectsAdded = true;
+      }
+    });
+
+    if (newProjectsAdded) {
+      const projectsSection = document.getElementById('projects');
+      if (projectsSection) {
+        projectsSection.outerHTML = renderProjects();
+        // Re-initialize scroll animations for new cards
+        initScrollAnimations();
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching GitHub repos:', error);
+  }
 }
 
 // ——— Navigation ———
@@ -226,42 +265,35 @@ function initScrollAnimations() {
 function initModals() {
   const modal = document.getElementById('project-modal');
   const modalBody = document.getElementById('modal-body');
-  const closeBtn = document.querySelector('.modal-close');
-  const readMoreBtns = document.querySelectorAll('.read-more-btn');
-  const viewCertBtns = document.querySelectorAll('.view-cert-btn');
 
-  readMoreBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const index = e.target.getAttribute('data-index');
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Use event delegation for dynamic buttons
+  document.body.addEventListener('click', (e) => {
+    if (e.target.closest('.read-more-btn')) {
+      const btn = e.target.closest('.read-more-btn');
+      const index = btn.getAttribute('data-index');
       const project = PROJECTS[index];
       if (project && project.readme) {
         modalBody.innerHTML = project.readme;
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
-    });
-  });
-
-  viewCertBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const certUrl = e.target.getAttribute('data-cert');
+    } else if (e.target.closest('.view-cert-btn')) {
+      const btn = e.target.closest('.view-cert-btn');
+      const certUrl = btn.getAttribute('data-cert');
       if (certUrl) {
         modalBody.innerHTML = `<iframe src="${certUrl}" width="100%" height="75vh" style="border:none; border-radius: 8px;"></iframe>`;
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
-    });
+    } else if (e.target === modal || e.target.closest('.modal-close')) {
+      closeModal();
+    }
   });
-
-  closeBtn.addEventListener('click', closeModal);
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) closeModal();
-  });
-
-  function closeModal() {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  }
 }
 
 document.addEventListener('DOMContentLoaded', init);
