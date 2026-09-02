@@ -61,6 +61,40 @@ const HACKATHONS = [
 
 const PROJECTS = [
   {
+    title: 'CitySense AI',
+    description: 'An intelligent command center for urban infrastructure management that uses AI to consolidate and prioritize civic issues into actionable clusters.',
+    tags: ['Node.js', 'Express', 'MongoDB', 'GenAI', 'Vanilla JS'],
+    infra: 'Deployed on Vercel',
+    github: 'https://github.com/akarshakmishra47-afk/CitySense-AI',
+    live: 'https://civic-pulse-ai-two.vercel.app/',
+    readme: `
+      <h3>🏙️ CitySense AI: Actionable Civic Intelligence</h3>
+      <p><strong>Problem Category:</strong> Open Innovation Challenge</p>
+      <p><strong>Overview:</strong> CitySense AI acts as an intelligent command center for urban infrastructure management. It provides a seamless mobile-responsive web portal where citizens can submit geo-tagged, photo-verified reports of local issues.</p>
+      
+      <h4>🚨 The Problem & Innovation</h4>
+      <p>Modern cities face disconnected complaint channels leading to a fragmented data landscape. City authorities struggle to triage thousands of scattered, duplicate complaints. Rather than leaving authorities with a raw list, CitySense AI utilizes Natural Language Processing and geolocation clustering to automatically consolidate related reports into distinct "Problem Clusters."</p>
+      
+      <h4>🎯 Key Features & Methodology</h4>
+      <ul>
+        <li><strong>Automated Triage & Prioritization:</strong> AI evaluates each cluster against Severity, Impact, Frequency, and Duration to generate a unified Priority Score (0-100).</li>
+        <li><strong>Root Cause Hypothesis:</strong> Analyzes text and patterns of clustered reports to diagnose the underlying failure (e.g., "low pressure" + "standing water" = main pipeline leak).</li>
+        <li><strong>Admin Command Center:</strong> Dashboard for authorities to visualize heatmaps, track timelines, and seamlessly update statuses, automatically notifying reporters.</li>
+        <li><strong>Multi-lingual Support:</strong> Built-in English/Hindi localization engine ensuring broader accessibility.</li>
+      </ul>
+
+      <h4>🛠️ Technology Stack & Architecture</h4>
+      <p><strong>Frontend:</strong> HTML5, CSS3, Vanilla JS (Responsive, Serverless-ready)<br>
+      <strong>Backend API:</strong> Node.js, Express<br>
+      <strong>Database:</strong> MongoDB (Mongoose ORM)<br>
+      <strong>AI Integration:</strong> Generative AI for semantic clustering and summarization<br>
+      <strong>Hosting:</strong> Vercel (Edge-optimized architecture)</p>
+
+      <h4>💡 Impact</h4>
+      <p>Transforms noisy, scattered citizen complaints into structured, actionable intelligence. Empowers municipal bodies to respond faster to critical failures, allocate repair resources more efficiently, and ultimately improve the quality of life for urban residents.</p>
+    `
+  },
+  {
     title: 'Vidya-Setu',
     description: 'A comprehensive student web portal & career ecosystem bridging the gap between campus life and professional development.',
     tags: ['Node.js', 'Express', 'MongoDB', 'JavaScript', 'Groq AI'],
