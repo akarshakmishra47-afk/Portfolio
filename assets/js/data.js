@@ -16,6 +16,15 @@ const PROFILE = {
 
 const HACKATHONS = [
   {
+    title: 'Binary Brains',
+    org: 'Mohamed Sathak Engineering College',
+    icon: '🏆',
+    description: 'Participated as Team Error 202 in the Binary Brains competition.',
+    type: 'Competition',
+    year: '2026',
+    certificate: 'assets/certificates/binary_brains_certificate.pdf'
+  },
+  {
     title: 'Far Away',
     org: 'Zuup',
     icon: '🚀',
