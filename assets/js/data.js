@@ -6,7 +6,7 @@
 const PROFILE = {
   name: 'Akarshak Mishra',
   role: 'B.Tech CSE (AI) Student',
-  tagline: 'AI student and problem-solver. I love learning about new technologies and working with great teams to solve real-world problems that matter.',
+  tagline: 'Driven B.Tech Computer Science student specializing in Artificial Intelligence. Experienced in developing full-stack applications, integrating AI technologies, and building solutions for real-world problems. Passionate about leveraging emerging technologies to solve meaningful challenges.',
   status: 'Open to opportunities',
   github: 'https://github.com/akarshakmishra47-afk',
   linkedin: 'https://www.linkedin.com/in/akarshak-mishra-b75503383',
@@ -65,6 +65,42 @@ const HACKATHONS = [
     description: 'Engineered and raced an RC car at the prestigious IIT-BHU tech festival with Team Tech_Hustlers.',
     type: 'Competition',
     year: '2026',
+  },
+  {
+    title: 'Kodnexus National Tech IQ Challenge',
+    org: 'Kodnexus',
+    icon: '🏆',
+    description: 'Participated in the Kodnexus National Tech IQ Challenge.',
+    type: 'Competition',
+    year: '2026',
+    certificate: 'assets/certificates/Kodnexus National Tech IQ Challenge 2.pdf'
+  },
+  {
+    title: 'Prompt to Placement: AI Tools & GenAI Quiz',
+    org: 'Dr D Y Patil Technical Campus',
+    icon: '🧠',
+    description: 'Participated in the Prompt to Placement: AI Tools & GenAI Quiz.',
+    type: 'Quiz',
+    year: '2026',
+    certificate: 'assets/certificates/Prompt to Placement.pdf'
+  },
+  {
+    title: 'QuizBlitz 2026',
+    org: 'Nexus',
+    icon: '🥉',
+    description: 'Secured Rank 3 (2nd Runner Up) in the QuizBlitz 2026 online quiz.',
+    type: 'Quiz',
+    year: '2026',
+    certificate: 'assets/certificates/Nexus QuizBlitz.pdf'
+  },
+  {
+    title: 'SU HACKS National Level Hackathon',
+    org: 'Simply Updify',
+    icon: '💻',
+    description: 'Participated as Team CODE OF DUTY in the SU HACKS National Level Online Hackathon.',
+    type: 'Hackathon',
+    year: '2026',
+    certificate: 'assets/certificates/SU HACKS.pdf'
   }
 ];
 
@@ -183,6 +219,10 @@ const EDUCATION = [
       'Technical Coursework — Apna College',
       '<a href="assets/certificates/ethical_hacking_certificate.pdf" target="_blank" style="color: var(--accent-blue); text-decoration: none;">Ethical Hacking 101 — Simplilearn</a>',
       'Specialized Certifications — Coursera',
+      '<a href="assets/certificates/sql_basic certificate.pdf" target="_blank" style="color: var(--accent-blue); text-decoration: none;">SQL (Basic) — HackerRank</a>',
+      '<a href="assets/certificates/Html.pdf" target="_blank" style="color: var(--accent-blue); text-decoration: none;">HTML5 - The Language — Infosys Springboard</a>',
+      '<a href="assets/certificates/Java Workshop.pdf" target="_blank" style="color: var(--accent-blue); text-decoration: none;">7-Day Java Workshop — VaultSphere AI</a>',
+      '<a href="assets/certificates/Advanced cpp.pdf" target="_blank" style="color: var(--accent-blue); text-decoration: none;">Learn Advanced C++ Course Online — Simplilearn</a>',
     ],
   },
   {
@@ -196,7 +236,7 @@ const EDUCATION = [
     degree: 'High School (10th Grade)',
     school: 'Kendriya Vidyalaya',
     period: 'Completed in 2022',
-    details: 'Score: 77.8%',
+    details: 'Score: 76.4%',
     certifications: [],
   }
 ];
